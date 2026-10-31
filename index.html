@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Formulario de contacto</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <main class="form-card">
+    <h1>Contáctanos</h1>
+    <p class="intro">Envianos tu comentario y nos contactaremos</p>
+
+    <form id="contact-form">
+      <label for="name">Nombre</label>
+      <input id="name" name="name" type="text" autocomplete="name" required>
+
+      <label for="email">Correo electrónico</label>
+      <input id="email" name="email" type="email" autocomplete="email" required>
+
+      <label for="numero de telefono">Numero de Telefono</label>
+      <input id="numero de telefono" name="numero de telefono" type="text" autocomplete="numero de telefono" required>
+
+      <label for="message">Mensaje</label>
+      <textarea id="message" name="message" rows="4" required></textarea>
+
+      <button type="submit">Enviar mensaje</button>
+      <p id="form-status" class="form-status" role="status" aria-live="polite"></p>
+    </form>
+  </main>
+</body>
+</html>
